@@ -214,7 +214,7 @@ shinyServer(function(input, output) {
                 names.arg = labels,
                 cex.axis=1.2, cex.names=1.2,
                 font.main=20,
-                line=-1,
+                line=1,
                 # col = c("darkred","darkblue"),
                 ylab = "Frequency",
                 horiz = FALSE)
