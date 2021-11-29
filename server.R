@@ -124,7 +124,7 @@ shinyServer(function(input, output) {
         for (i in 1:length(indices)){
             # plot_ly(y = df[[var_1()]][unlist(indices[i])],xlab = names(group_names[i]),ylab = "", yaxt ='n',type = "box")
             
-            boxplot(df[[var_1()]][unlist(indices[i])],xlab = names(group_names[i]),ylab = "", yaxt ='n',cex.lab=1.2, axes = FALSE)
+            boxplot(df[[var_1()]][unlist(indices[i])],xlab = names(group_names[i]),ylab = "", yaxt ='n',cex.lab=1.2,cex.main=1.3, axes = FALSE)
             axis(side=2,at=c(1:length(levels(df[[var_1()]]))),labels = levels(df[[var_1()]]),las=2,cex.lab=1.2)
         }
         mtext(paste(var_1(),"grouped by",var_2(),sep = ' '), side = 3, line = -2, outer = TRUE)
