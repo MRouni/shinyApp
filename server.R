@@ -211,7 +211,7 @@ shinyServer(function(input, output) {
         tab0 <- table(df[[var_0()]])
         
         barplot(tab0,
-                main = var0(),
+                main = var_0(),
                 names.arg = labels,
                 cex.axis=1.2, cex.names=1.2,
                 font.main=20,
