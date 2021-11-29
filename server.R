@@ -124,10 +124,10 @@ shinyServer(function(input, output) {
         for (i in 1:length(indices)){
             # plot_ly(y = df[[var_1()]][unlist(indices[i])],xlab = names(group_names[i]),ylab = "", yaxt ='n',type = "box")
             
-            boxplot(df[[var_1()]][unlist(indices[i])],xlab = names(group_names[i]),ylab = "", yaxt ='n',cex.lab=1.2,line = 0,cex.main=1.5, axes = FALSE)
+            boxplot(df[[var_1()]][unlist(indices[i])],xlab = names(group_names[i]), line = -1, ylab = "", yaxt ='n',cex.lab=1.2, axes = FALSE)
             axis(side=2,at=c(1:length(levels(df[[var_1()]]))),labels = levels(df[[var_1()]]),las=2,cex.lab=1.2)
         }
-        mtext(paste(var_1(),"grouped by",var_2(),sep = ' '), side = 3, line = -2, outer = TRUE)
+        mtext(paste(var_1(),"grouped by",var_2(),sep = ' '), side = 3, line = -2, cex=1.4, outer = TRUE)
 
     })
     
@@ -213,11 +213,10 @@ shinyServer(function(input, output) {
         barplot(tab0,
                 names.arg = labels,
                 cex.axis=1.2, cex.names=1.2,
-                font.main=20,
                 # col = c("darkred","darkblue"),
                 ylab = "Frequency",
                 horiz = FALSE)
-        title(var_0(), adj = 0.5, line = -1)
+    title(var_0(), adj = 0.5, line = 2, cex = 1.4)
 
     })
 
