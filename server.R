@@ -186,7 +186,7 @@ shinyServer(function(input, output) {
         else if (var_0()=="GenHlth"){
             labels = c("Excellent", "Good", "OK", "Not Good", "Poor")
         }
-        else if (var_0()=="MenHlth" || var_0() =="PhysHlth"){
+        else if (var_0()=="MentHlth" || var_0() =="PhysHlth"){
             labels = c("0-5","6-10","11-15","16-20","21-25","26-30")
         }
         else if(var_0()=="Diabetes"){
