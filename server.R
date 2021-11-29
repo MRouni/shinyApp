@@ -110,7 +110,7 @@ shinyServer(function(input, output) {
         }
         else if(length(indices)>5 & length(indices)<11){
             rows <- 2
-            columns <- 5
+            columns <- 4
         }
         else{
             rows <- 4
