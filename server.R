@@ -122,12 +122,13 @@ shinyServer(function(input, output) {
         group_names <- table(group_names)
         # browser()
         for (i in 1:length(indices)){
-            # plot_ly(y = df[[var_1()]][unlist(indices[i])],xlab = names(group_names[i]),ylab = "", yaxt ='n',type = "box")
-            
-            boxplot(df[[var_1()]][unlist(indices[i])],xlab = names(group_names[i]), line = -1, ylab = "", yaxt ='n',cex.lab=1.2, axes = FALSE)
-            axis(side=2,at=c(1:length(levels(df[[var_1()]]))),labels = levels(df[[var_1()]]),las=2,cex.lab=1.2)
+          # plot_ly(y = df[[var_1()]][unlist(indices[i])],xlab = names(group_names[i]),ylab = "", yaxt ='n',type = "box")
+
+          boxplot(df[[var_1()]][unlist(indices[i])],xlab = "", ylab = "", yaxt ='n', axes = FALSE)
+          axis(side=2,at=c(1:length(levels(df[[var_1()]]))),labels = levels(df[[var_1()]]),las=2,cex.lab=1.2)
+          title(xlab = names(group_names[i]), cex.lab=1.2,line = 0)            # Add x-axis text
         }
-        mtext(paste(var_1(),"grouped by",var_2(),sep = ' '), side = 3, line = -2, cex=1.4, outer = TRUE)
+        mtext(paste(var_1(),"grouped by",var_2(),sep = ' '), side = 3, line = -2, cex=1.5, outer = TRUE)
 
     })
     
