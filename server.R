@@ -107,14 +107,18 @@ shinyServer(function(input, output) {
         if (length(indices)<=5){
             rows <- 1
             columns <- length(indices)
+            h = 500, w = 700 
         }
         else if(length(indices)>5 & length(indices)<11){
             rows <- 2
             columns <- 5
+            h = 700, w = 900 
         }
         else{
             rows <- 4
             columns <- 4
+            h = 900, w = 1200 
+
         }
         # browser()
             
@@ -211,8 +215,9 @@ shinyServer(function(input, output) {
         tab0 <- table(df[[var_0()]])
         
         barplot(tab0,
-                main = "",
+                main = var0(),
                 names.arg = labels,
+                cex.axis=1.2, cex.names=1.2,
                 # col = c("darkred","darkblue"),
                 ylab = "Frequency",
                 horiz = FALSE)
@@ -221,7 +226,7 @@ shinyServer(function(input, output) {
 
     
     
-    output$plot_1 <- renderPlot(plot_1(),height = 900, width = 1200)
+    output$plot_1 <- renderPlot(plot_1(),height = h, width = w)
     output$plot_2 <- renderPlot(plot_2(),height = 400, width = 600)
     
     
