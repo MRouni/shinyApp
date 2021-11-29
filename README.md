@@ -7,5 +7,6 @@ Application lets user to import file and choose to plot boxplots of grouped demo
 
 Run this app with RStudio by running 
 ```R
+library(shiny)
 runGitHub( "shinyApp", "mrouni", ref = "main")
 ```
