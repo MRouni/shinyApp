@@ -1,7 +1,6 @@
 library(shiny)
 
 
-# Define UI for application that draws a histogram
 shinyUI(fluidPage(
     
     titlePanel(h5("Heart Disease Health Indicators")),
