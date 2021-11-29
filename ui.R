@@ -7,7 +7,7 @@ shinyUI(fluidPage(
 
     main_page <- tabPanel(
         title = "",
-        titlePanel("Analysis"),
+        titlePanel(""),
         sidebarLayout(
             sidebarPanel(
                 title = "Inputs",
