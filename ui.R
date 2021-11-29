@@ -3,10 +3,10 @@ library(shiny)
 
 shinyUI(fluidPage(
     
-    titlePanel(h5("Heart Disease Health Indicators")),
+    titlePanel(h3("Heart Disease Health Indicators")),
 
     main_page <- tabPanel(
-        title = "Analysis",
+        title = "",
         titlePanel("Analysis"),
         sidebarLayout(
             sidebarPanel(
