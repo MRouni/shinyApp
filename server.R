@@ -107,17 +107,20 @@ shinyServer(function(input, output) {
         if (length(indices)<=5){
             rows <- 1
             columns <- length(indices)
-            h = 500, w = 700 
+            h <- 500
+            w <- 700 
         }
         else if(length(indices)>5 & length(indices)<11){
             rows <- 2
             columns <- 5
-            h = 700, w = 900 
+            h <- 700
+            w <- 900 
         }
         else{
             rows <- 4
             columns <- 4
-            h = 900, w = 1200 
+            h <- 900
+            w <- 1200 
 
         }
         # browser()
