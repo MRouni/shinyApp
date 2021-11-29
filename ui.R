@@ -11,7 +11,7 @@ shinyUI(fluidPage(
         sidebarLayout(
             sidebarPanel(
                 title = "Inputs",
-                fileInput("csv_input","Select CSV File to Import",accept=".csv"),
+                fileInput("csv_input","Import CSV file",accept=".csv"),
                 hr(style="border-color: purple;"),
                 selectInput("var_1","Boxplot",choices="Select"),
                 selectInput("var_2","Grouped By",choices="Select"),
