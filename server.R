@@ -222,7 +222,7 @@ shinyServer(function(input, output) {
     
     
     output$plot_1 <- renderPlot(plot_1(),height = 900, width = 1200)
-    output$plot_2 <- renderPlot(plot_2(),height = 900, width = 1200)
+    output$plot_2 <- renderPlot(plot_2(),height = 400, width = 600)
     
     
 })
